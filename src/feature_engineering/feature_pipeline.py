@@ -33,6 +33,9 @@ def build_features(df):
 
     df = df.dropna()
 
+    if "Datetime" in df.columns: 
+        df = df.drop(columns=["Datetime"])
+
     logger.info(
         f"Feature engineering completed. Shape: {df.shape}"
     )

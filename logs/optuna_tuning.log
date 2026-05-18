@@ -1,0 +1,1 @@
+2026-05-19 00:26:47,079 | optuna_tuning | INFO | Best parameters: {'n_estimators': 291, 'max_depth': 6, 'learning_rate': 0.04355756634202424, 'subsample': 0.8169491412827267, 'colsample_bytree': 0.7874093023767035}

@@ -1,0 +1,1 @@
+2026-05-19 00:26:54,862 | model_evaluation | INFO | Evaluation metrics: {'MAE': 0.01725114793527353, 'MSE': 0.0008347256353787081, 'RMSE': np.float64(0.028891618773940447), 'R2': 0.9689108383929024, 'MAPE': np.float64(inf)}
