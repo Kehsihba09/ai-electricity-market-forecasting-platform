@@ -1,0 +1,3 @@
+2026-05-18 20:31:27,185 | environment_test | INFO | Environment initialized successfully.
+2026-05-18 20:31:27,185 | environment_test | INFO | Project root: C:\Users\alpha
+2026-05-18 20:31:27,185 | environment_test | INFO | Loaded config: {'project': None, 'name': 'ai-electricity-market-forecasting-platform', 'data': None, 'raw_data_path': 'data/raw/power.csv', 'processed_data_path': 'data/processed/', 'training': None, 'test_size': 0.2, 'validation_size': 0.1, 'random_state': 42, 'xgboost': None, 'n_estimators': 500, 'learning_rate': 0.05, 'max_depth': 6, 'streaming': None, 'kafka_topic': 'electricity_market', 'replay_speed': 1, 'mlflow': None, 'experiment_name': 'electricity_forecasting', 'dashboard': None, 'refresh_interval': 5}
