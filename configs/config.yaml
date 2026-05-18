@@ -1,0 +1,20 @@
+project:
+  name: electricity_forecasting
+
+data:
+  raw_data_path: data/raw/power.csv
+  processed_data_path: data/processed/
+
+training:
+  test_size: 0.2
+  validation_size: 0.1
+  random_state: 42
+
+xgboost:
+  n_estimators: 500
+  learning_rate: 0.05
+  max_depth: 6
+
+streaming:
+  kafka_topic: electricity_market
+  replay_speed: 1
