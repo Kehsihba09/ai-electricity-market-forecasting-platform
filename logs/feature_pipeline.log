@@ -1,0 +1,2 @@
+2026-05-18 23:26:12,969 | feature_pipeline | INFO | Starting feature engineering.
+2026-05-18 23:26:13,038 | feature_pipeline | INFO | Feature engineering completed. Shape: (75532, 21)

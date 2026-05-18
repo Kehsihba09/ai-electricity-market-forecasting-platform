@@ -1,0 +1,2 @@
+2026-05-18 23:26:12,509 | data_loader | INFO | Loading data from data/raw/power.csv
+2026-05-18 23:26:12,740 | data_loader | INFO | Dataset loaded successfully with shape: (75700, 8)

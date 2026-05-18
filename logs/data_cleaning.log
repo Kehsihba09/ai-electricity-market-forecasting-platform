@@ -1,0 +1,2 @@
+2026-05-18 23:26:12,822 | data_cleaning | INFO | Starting data cleaning process.
+2026-05-18 23:26:12,890 | data_cleaning | INFO | Data cleaned successfully. Shape: (75700, 8)
