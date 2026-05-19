@@ -4,3 +4,7 @@
 2026-05-19 00:19:48,568 | feature_pipeline | INFO | Feature engineering completed. Shape: (75532, 21)
 2026-05-19 00:23:52,512 | feature_pipeline | INFO | Starting feature engineering.
 2026-05-19 00:23:52,593 | feature_pipeline | INFO | Feature engineering completed. Shape: (75532, 20)
+2026-05-19 16:10:49,338 | feature_pipeline | INFO | Building simplified features.
+2026-05-19 16:10:49,360 | feature_pipeline | INFO | Feature engineering completed. Shape: (75700, 11)
+2026-05-19 16:21:10,590 | feature_pipeline | INFO | Building production-grade features.
+2026-05-19 16:21:10,610 | feature_pipeline | INFO | Feature engineering completed. Shape: (75700, 9)

@@ -6,3 +6,7 @@
 2026-05-19 00:23:52,311 | data_loader | INFO | Dataset loaded successfully with shape: (75700, 8)
 2026-05-19 01:42:49,690 | data_loader | INFO | Loading data from data/raw/power.csv
 2026-05-19 01:42:49,920 | data_loader | INFO | Dataset loaded successfully with shape: (75700, 8)
+2026-05-19 16:10:48,812 | data_loader | INFO | Loading data from data/raw/power.csv
+2026-05-19 16:10:49,078 | data_loader | INFO | Dataset loaded successfully with shape: (75700, 8)
+2026-05-19 16:21:10,181 | data_loader | INFO | Loading data from data/raw/power.csv
+2026-05-19 16:21:10,398 | data_loader | INFO | Dataset loaded successfully with shape: (75700, 8)

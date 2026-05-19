@@ -1,43 +1,45 @@
-from src.feature_engineering.lag_features import (
-create_lag_features
-)
-
-from src.feature_engineering.rolling_features import (
-create_rolling_features
-)
-
-from src.feature_engineering.calendar_features import (
-create_calendar_features
-)
-
 from src.utils.logger import get_logger
 
 logger = get_logger("feature_pipeline")
 
-TARGET_COLUMN = "MCP (Rs/MWh) *"
+DROP_COLUMNS = [
+"Datetime",
+"Unnamed: 0",
+"Session ID"
+]
 
 def build_features(df):
-    logger.info("Starting feature engineering.")
-
-    df = create_calendar_features(df)
-
-    df = create_lag_features(
-        df,
-        TARGET_COLUMN
-    )
-
-    df = create_rolling_features(
-        df,
-        TARGET_COLUMN
-    )
-
-    df = df.dropna()
-
-    if "Datetime" in df.columns: 
-        df = df.drop(columns=["Datetime"])
 
     logger.info(
-        f"Feature engineering completed. Shape: {df.shape}"
+        "Building production-grade features."
+    )
+
+    df["hour"] = df["Datetime"].dt.hour
+
+    df["day_of_week"] = (
+        df["Datetime"].dt.dayofweek
+    )
+
+    df["month"] = (
+        df["Datetime"].dt.month
+    )
+
+    df["is_weekend"] = (
+        df["day_of_week"]
+        .isin([5, 6])
+        .astype(int)
+    )
+
+    columns_to_drop = [
+        col for col in DROP_COLUMNS
+        if col in df.columns
+    ]
+
+    df = df.drop(columns=columns_to_drop)
+
+    logger.info(
+        f"Feature engineering completed. "
+        f"Shape: {df.shape}"
     )
 
     return df
