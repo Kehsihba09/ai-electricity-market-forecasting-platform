@@ -7,11 +7,10 @@ logs/
 data/raw/
 data/processed/
 
-models/
 mlruns/
 
-*.onnx
-*.pkl
+
+
 *.h5
 
 .env
