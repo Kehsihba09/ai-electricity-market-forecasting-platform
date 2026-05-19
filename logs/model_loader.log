@@ -92,3 +92,6 @@
 2026-05-19 17:09:56,830 | model_loader | INFO | Model loaded successfully.
 2026-05-19 21:10:11,976 | model_loader | INFO | Loading model from models/xgboost_model.pkl
 2026-05-19 21:10:47,582 | model_loader | INFO | Loading model from models/xgboost_model.pkl
+2026-05-19 21:25:40,988 | model_loader | INFO | Loading model from models/xgboost_model.pkl
+2026-05-19 21:29:05,595 | model_loader | INFO | Loading model from models/xgboost_model.pkl
+2026-05-19 21:32:16,943 | model_loader | INFO | Loading model from models/xgboost_model.pkl
