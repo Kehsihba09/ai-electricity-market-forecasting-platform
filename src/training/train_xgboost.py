@@ -33,16 +33,16 @@ def train_xgboost_model(X_train,y_train,X_val,y_val,X_test,y_test,params):
         )
 
         model.fit(
-            X_train,
-            y_train,
+            X_train.values,
+            y_train.values,
             eval_set=[
-                (X_train, y_train),
-                (X_val, y_val)
+                (X_train.values, y_train.values),
+                (X_val.values, y_val.values)
             ],
             verbose=False
         )
 
-        predictions = model.predict(X_test)
+        predictions = model.predict(X_test.values)
 
         metrics = evaluate_regression_model(
             y_test,

@@ -1,3 +1,6 @@
 2026-05-19 00:26:47,079 | optuna_tuning | INFO | Best parameters: {'n_estimators': 291, 'max_depth': 6, 'learning_rate': 0.04355756634202424, 'subsample': 0.8169491412827267, 'colsample_bytree': 0.7874093023767035}
 2026-05-19 16:14:09,748 | optuna_tuning | INFO | Best parameters: {'n_estimators': 782, 'max_depth': 8, 'learning_rate': 0.018753495969661985, 'subsample': 0.9151196550588374, 'colsample_bytree': 0.8280199707988476}
 2026-05-19 16:22:40,738 | optuna_tuning | INFO | Best parameters: {'n_estimators': 758, 'max_depth': 9, 'learning_rate': 0.008012299697500752, 'subsample': 0.5079882281432346, 'colsample_bytree': 0.8988050865243642}
+2026-05-19 16:44:51,961 | optuna_tuning | INFO | Best parameters: {'n_estimators': 374, 'max_depth': 9, 'learning_rate': 0.050431355274525774, 'subsample': 0.5021219871765881, 'colsample_bytree': 0.9820601461201601}
+2026-05-19 16:52:16,267 | optuna_tuning | INFO | Best parameters: {'n_estimators': 494, 'max_depth': 4, 'learning_rate': 0.17038164319513124, 'subsample': 0.8571132886560758, 'colsample_bytree': 0.9169636031761375}
+2026-05-19 16:56:43,944 | optuna_tuning | INFO | Best parameters: {'n_estimators': 406, 'max_depth': 5, 'learning_rate': 0.02844537018865464, 'subsample': 0.8225794135479012, 'colsample_bytree': 0.9282242416047631}

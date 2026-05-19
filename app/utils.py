@@ -7,19 +7,19 @@ def prepare_features(request):
 
     df = pd.DataFrame([{
 
-        "Purchase Bid (MW)":
+        "purchase_bid":
             request.purchase_bid,
 
-        "Sell Bid (MW)":
+        "sell_bid":
             request.sell_bid,
 
-        "MCV (MW)":
+        "mcv":
             (
                 request.purchase_bid
                 - request.sell_bid
             ),
 
-        "Final Scheduled Volume (MW)":
+        "final_scheduled_volume":
             request.final_scheduled_volume,
 
         "hour":

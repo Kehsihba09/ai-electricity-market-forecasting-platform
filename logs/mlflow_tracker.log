@@ -4,3 +4,8 @@
 2026-05-19 16:14:35,008 | mlflow_tracker | INFO | Model logged successfully.
 2026-05-19 16:22:42,637 | mlflow_tracker | INFO | MLflow experiment initialized: electricity_forecasting
 2026-05-19 16:23:02,161 | mlflow_tracker | INFO | Model logged successfully.
+2026-05-19 16:44:54,138 | mlflow_tracker | INFO | MLflow experiment initialized: electricity_forecasting
+2026-05-19 16:45:13,888 | mlflow_tracker | INFO | Model logged successfully.
+2026-05-19 16:52:18,481 | mlflow_tracker | INFO | MLflow experiment initialized: electricity_forecasting
+2026-05-19 16:56:46,467 | mlflow_tracker | INFO | MLflow experiment initialized: electricity_forecasting
+2026-05-19 16:57:03,720 | mlflow_tracker | INFO | Model logged successfully.

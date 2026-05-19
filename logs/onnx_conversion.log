@@ -1,0 +1,15 @@
+2026-05-19 16:36:56,228 | onnx_conversion | INFO | Loading trained model.
+2026-05-19 16:36:56,890 | onnx_conversion | INFO | Converting model to ONNX.
+2026-05-19 16:39:43,747 | onnx_conversion | INFO | Loading trained model.
+2026-05-19 16:39:44,118 | onnx_conversion | INFO | Registering XGBoost converter.
+2026-05-19 16:39:44,118 | onnx_conversion | INFO | Converting model to ONNX.
+2026-05-19 16:46:41,321 | onnx_conversion | INFO | Loading trained model.
+2026-05-19 16:46:41,606 | onnx_conversion | INFO | Registering XGBoost converter.
+2026-05-19 16:46:41,606 | onnx_conversion | INFO | Converting model to ONNX.
+2026-05-19 16:57:32,956 | onnx_conversion | INFO | Loading trained model.
+2026-05-19 16:57:33,183 | onnx_conversion | INFO | Registering XGBoost converter.
+2026-05-19 16:57:33,183 | onnx_conversion | INFO | Converting model to ONNX.
+2026-05-19 16:59:26,336 | onnx_conversion | INFO | Loading trained model.
+2026-05-19 16:59:26,574 | onnx_conversion | INFO | Registering XGBoost converter.
+2026-05-19 16:59:26,574 | onnx_conversion | INFO | Converting model to ONNX.
+2026-05-19 16:59:27,282 | onnx_conversion | INFO | ONNX model saved at models/xgboost_model.onnx

@@ -50,12 +50,12 @@ def optimize_xgboost(X_train,y_train,X_val,y_val,n_trials=20):
         )
 
         model.fit(
-            X_train,
-            y_train,
+            X_train.values,
+            y_train.values,
             verbose=False
         )
 
-        predictions = model.predict(X_val)
+        predictions = model.predict(X_val.values)
 
         mae = mean_absolute_error(
             y_val,
