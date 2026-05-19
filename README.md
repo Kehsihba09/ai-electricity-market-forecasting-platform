@@ -6,6 +6,11 @@ The system simulates a live electricity market environment using Kafka-based str
 
 Designed as a production-style ML systems engineering project inspired by institutional energy trading and real-time forecasting infrastructure.
 
+## 🚀 Live Demo
+
+[Open Live Forecasting Dashboard]
+(https://ai-electricity-market-forecasting-platform-k8nkc57dsdqkfxmtous.streamlit.app/)
+
 ## 🏗️ System Architecture
 
 ```text
