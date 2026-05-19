@@ -7,7 +7,6 @@ logs/
 data/raw/
 data/processed/
 
-models/
 mlruns/
 
 *.onnx
