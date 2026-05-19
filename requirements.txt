@@ -21,3 +21,5 @@ statsmodels
 seaborn
 matplotlib
 pyyaml
+skl2onnx
+onnxmltools
