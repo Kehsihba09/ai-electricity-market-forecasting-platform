@@ -10,10 +10,14 @@ from src.utils.logger import get_logger
 logger = get_logger("preprocessing_pipeline")
 
 NUMERICAL_COLUMNS = [
-"Purchase Bid (MW)",
-"Sell Bid (MW)",
-"Final Scheduled Volume (MW)",
-"MCP (Rs/MWh) *"
+
+    "purchase_bid_mw",
+
+    "sell_bid_mw",
+
+    "final_scheduled_volume_mw",
+
+    "mcp_rs_mwh"
 ]
 
 def build_preprocessing_pipeline():

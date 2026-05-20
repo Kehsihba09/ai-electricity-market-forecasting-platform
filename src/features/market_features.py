@@ -9,14 +9,14 @@ def create_market_features(df):
     )
 
     df["bid_spread"] = (
-        df["purchase_bid"]
-        - df["sell_bid"]
+        df["purchase_bid_mw"]
+        - df["sell_bid_mw"]
     )
 
     df["volume_pressure"] = (
-        df["final_scheduled_volume"]
+        df["final_scheduled_volume_mw"]
         / (
-            df["purchase_bid"] + 1
+            df["purchase_bid_mw"] + 1
         )
     )
 

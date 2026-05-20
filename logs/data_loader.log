@@ -16,3 +16,19 @@
 2026-05-19 16:50:57,577 | data_loader | INFO | Dataset loaded successfully with shape: (75700, 8)
 2026-05-19 16:54:58,656 | data_loader | INFO | Loading data from data/raw/power.csv
 2026-05-19 16:54:59,093 | data_loader | INFO | Dataset loaded successfully with shape: (75700, 8)
+2026-05-20 18:41:07,451 | data_loader | INFO | Loading data from data/raw/power.csv
+2026-05-20 18:41:07,651 | data_loader | INFO | Dataset loaded successfully with shape: (75700, 8)
+2026-05-20 18:42:12,010 | data_loader | INFO | Loading data from data/raw/power.csv
+2026-05-20 18:42:12,202 | data_loader | INFO | Dataset loaded successfully with shape: (75700, 8)
+2026-05-20 18:46:56,882 | data_loader | INFO | Loading data from data/raw/power.csv
+2026-05-20 18:46:57,114 | data_loader | INFO | Dataset loaded successfully with shape: (75700, 8)
+2026-05-20 18:58:38,309 | data_loader | INFO | Loading data from data/raw/power.csv
+2026-05-20 18:58:38,518 | data_loader | INFO | Dataset loaded successfully with shape: (75700, 8)
+2026-05-20 19:03:59,375 | data_loader | INFO | Loading data from data/raw/power.csv
+2026-05-20 19:03:59,569 | data_loader | INFO | Dataset loaded successfully with shape: (75700, 8)
+2026-05-20 19:06:23,814 | data_loader | INFO | Loading data from data/raw/power.csv
+2026-05-20 19:06:23,999 | data_loader | INFO | Dataset loaded successfully with shape: (75700, 8)
+2026-05-20 19:10:00,401 | data_loader | INFO | Loading data from data/raw/power.csv
+2026-05-20 19:10:00,590 | data_loader | INFO | Dataset loaded successfully with shape: (75700, 8)
+2026-05-20 19:12:05,059 | data_loader | INFO | Loading data from data/raw/power.csv
+2026-05-20 19:12:05,264 | data_loader | INFO | Dataset loaded successfully with shape: (75700, 8)

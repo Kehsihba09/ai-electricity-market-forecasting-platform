@@ -4,11 +4,16 @@ from src.utils.exceptions import DataValidationError
 logger = get_logger("data_validation")
 
 REQUIRED_COLUMNS = [
-"Datetime",
-"Purchase Bid (MW)",
-"Sell Bid (MW)",
-"Final Scheduled Volume (MW)",
-"MCP (Rs/MWh) *"
+
+    "datetime",
+
+    "purchase_bid_mw",
+
+    "sell_bid_mw",
+
+    "final_scheduled_volume_mw",
+
+    "mcp_rs_mwh"
 ]
 
 def validate_data(df):
