@@ -1,10 +1,6 @@
 import torch
 import torch.nn as nn
 
-from src.deep_learning.positional_encoding import (
-    PositionalEncoding
-)
-
 class TransformerForecastModel(nn.Module):
 
     def __init__(
@@ -17,7 +13,9 @@ class TransformerForecastModel(nn.Module):
 
         nhead=4,
 
-        num_layers=2
+        num_layers=2,
+
+        dropout=0.1
     ):
 
         super().__init__()
@@ -29,12 +27,6 @@ class TransformerForecastModel(nn.Module):
             d_model
         )
 
-        self.positional_encoding = (
-            PositionalEncoding(
-                d_model
-            )
-        )
-
         encoder_layer = (
             nn.TransformerEncoderLayer(
 
@@ -42,11 +34,13 @@ class TransformerForecastModel(nn.Module):
 
                 nhead=nhead,
 
+                dropout=dropout,
+
                 batch_first=True
             )
         )
 
-        self.transformer = (
+        self.transformer_encoder = (
             nn.TransformerEncoder(
 
                 encoder_layer,
@@ -64,12 +58,13 @@ class TransformerForecastModel(nn.Module):
 
         x = self.input_projection(x)
 
-        x = self.positional_encoding(x)
+        attention_output = (
+            self.transformer_encoder(x)
+        )
 
-        output = self.transformer(x)
+        output = self.fc(
 
-        output = output[:, -1, :]
-
-        output = self.fc(output)
+            attention_output[:, -1, :]
+        )
 
         return output
