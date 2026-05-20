@@ -1,6 +1,9 @@
 import json
 import os
 from datetime import datetime
+from src.deep_learning.dl_leaderboard import (
+    update_dl_leaderboard
+)
 
 EXPERIMENT_PATH = (
     "artifacts/dl_experiments.json"
@@ -44,3 +47,19 @@ def log_experiment(results):
             file,
             indent=4
         )
+
+    update_dl_leaderboard({
+
+    "model":
+        results["model"],
+
+    "validation_loss":
+        results["final_validation_loss"],
+
+    "train_loss":
+        results["final_train_loss"],
+
+    "timestamp":
+        results["timestamp"]
+    })
+

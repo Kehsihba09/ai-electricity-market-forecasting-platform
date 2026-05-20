@@ -32,7 +32,6 @@ def clean_data(df):
 
     for col in df.columns
     ]
-    print(df.columns.tolist())
 
     logger.info(f"Data cleaned successfully. Shape: {df.shape}")
 

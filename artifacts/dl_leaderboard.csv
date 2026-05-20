@@ -1,0 +1,2 @@
+model,validation_loss,train_loss,timestamp
+GRU,0.03218780646857958,0.0365281560452588,2026-05-20 21:43:04.634545
