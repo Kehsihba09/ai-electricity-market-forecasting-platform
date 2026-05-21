@@ -200,6 +200,54 @@ def run_transformer_optimization():
     "best_transformer"
     )
 
+    df = pd.read_csv(DATA_PATH)
+
+    df = build_advanced_features(
+
+        df,
+
+        TARGET_COLUMN
+    )
+
+    X = df.drop(
+        columns=[TARGET_COLUMN]
+    )
+
+    X = X.select_dtypes(
+        include=["number"]
+    )
+
+    best_model = TransformerForecastModel(
+
+        input_size=X.shape[1],
+
+        d_model=study.best_params["d_model"],
+
+        nhead=study.best_params["nhead"],
+
+        num_layers=study.best_params["num_layers"],
+
+        dropout=study.best_params["dropout"]
+    )
+
+    checkpoint_path = save_checkpoint(
+
+    best_model,
+
+    "best_transformer"
+    )
+    register_model(
+
+    model_name="best_transformer",
+
+    model_type="Transformer",
+
+    validation_loss=study.best_value,
+
+    hyperparameters=best_config,
+
+    checkpoint_path=checkpoint_path
+    )
     print("\nBEST VALIDATION LOSS:\n")
 
     print(study.best_value)
@@ -207,3 +255,5 @@ def run_transformer_optimization():
 if __name__ == "__main__":
 
     run_transformer_optimization()
+
+    

@@ -13,6 +13,13 @@ from src.deep_learning.checkpoint_manager import (
     save_checkpoint
 )
 
+device = torch.device(
+
+    "cuda"
+    if torch.cuda.is_available()
+    else "cpu"
+)
+
 class ForecastTrainer:
 
     def __init__(
@@ -26,12 +33,14 @@ class ForecastTrainer:
         epochs=20
     ):
 
-        self.model = model
+        self.model = model.to(device)
 
         self.epochs = epochs
 
         self.device = torch.device(
-            "cpu"
+            "cuda"
+            if torch.cuda.is_available()
+            else "cpu"
         )
 
         self.model.to(self.device)

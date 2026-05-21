@@ -1,0 +1,17 @@
+[
+    {
+        "model_name": "best_transformer",
+        "model_type": "Transformer",
+        "validation_loss": 0.026925245019030854,
+        "hyperparameters": {
+            "d_model": 32,
+            "nhead": 2,
+            "num_layers": 2,
+            "dropout": 0.11733838836181765,
+            "learning_rate": 0.0011030404426780223,
+            "sequence_length": 12
+        },
+        "checkpoint_path": "artifacts/checkpoints/best_transformer.pt",
+        "registered_at": "2026-05-21 18:31:38.489293"
+    }
+]
