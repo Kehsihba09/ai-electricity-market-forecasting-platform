@@ -17,6 +17,18 @@ from src.deep_learning.optimization_utils import (
     prepare_dataloaders
 )
 
+from src.mlops.model_registry import (
+    register_model
+)
+
+from src.mlops.config_tracker import (
+    save_model_config
+)
+
+from src.mlops.checkpoint_manager import (
+    save_checkpoint
+)
+
 TARGET_COLUMN = "mcp_rs_mwh"
 
 DATA_PATH = (
@@ -159,6 +171,34 @@ def run_transformer_optimization():
     print("\nBEST TRANSFORMER PARAMETERS:\n")
 
     print(study.best_params)
+
+    best_config = {
+
+    "d_model":
+        study.best_params["d_model"],
+
+    "nhead":
+        study.best_params["nhead"],
+
+    "num_layers":
+        study.best_params["num_layers"],
+
+    "dropout":
+        study.best_params["dropout"],
+
+    "learning_rate":
+        study.best_params["learning_rate"],
+
+    "sequence_length":
+        study.best_params["sequence_length"]
+    }
+
+    save_model_config(
+
+    best_config,
+
+    "best_transformer"
+    )
 
     print("\nBEST VALIDATION LOSS:\n")
 

@@ -1,53 +1,57 @@
-import os
 import json
+import os
 from datetime import datetime
 
-from src.utils.logger import get_logger
-
-logger = get_logger("model_registry")
-
-REGISTRY_PATH = "artifacts/model_registry.json"
+REGISTRY_PATH = (
+    "artifacts/model_registry.json"
+)
 
 def register_model(
 
     model_name,
 
-    version,
+    model_type,
 
-    metrics,
+    validation_loss,
 
-    features,
+    hyperparameters,
 
-    artifact_path
+    checkpoint_path
 ):
-
-    logger.info(
-        f"Registering model: {model_name}"
-    )
 
     model_entry = {
 
-        "model_name": model_name,
+        "model_name":
+            model_name,
 
-        "version": version,
+        "model_type":
+            model_type,
 
-        "timestamp": str(datetime.now()),
+        "validation_loss":
+            validation_loss,
 
-        "metrics": metrics,
+        "hyperparameters":
+            hyperparameters,
 
-        "features": features,
+        "checkpoint_path":
+            checkpoint_path,
 
-        "artifact_path": artifact_path
+        "registered_at":
+            str(datetime.now())
     }
 
-    if os.path.exists(REGISTRY_PATH):
+    if os.path.exists(
+        REGISTRY_PATH
+    ):
 
         with open(
-            REGISTRY_PATH,
-            "r"
-        ) as file:
 
-            registry = json.load(file)
+            REGISTRY_PATH,
+
+            "r"
+        ) as f:
+
+            registry = json.load(f)
 
     else:
 
@@ -55,22 +59,22 @@ def register_model(
 
     registry.append(model_entry)
 
-    os.makedirs(
-        "artifacts",
-        exist_ok=True
-    )
-
     with open(
+
         REGISTRY_PATH,
+
         "w"
-    ) as file:
+    ) as f:
 
         json.dump(
+
             registry,
-            file,
+
+            f,
+
             indent=4
         )
 
-    logger.info(
+    print(
         "Model registered successfully."
     )
